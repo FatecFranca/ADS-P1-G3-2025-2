@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +14,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <!-- datatables css -->
     <link rel="stylesheet" href="https://cdn.datatables.net/v/bs4/dt-1.13.6/datatables.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css">
     <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/carousel.css">
     <title>Casa da Sopa de Restinga</title>
 </head>
+
 <body>
     <header class="cabecalho">
         <img src="src/img/logoong.png" alt="log-casa-da-sopa-de-restinga" class="logo">
@@ -25,15 +30,158 @@
                 <li><a href="#">PROJETOS</a><img src="src/img/setaprabaixo.png" alt="" class="setaprabaixomenu"></li>
                 <li><a href="#">QUERO AJUDAR</a></li>
                 <li><a href="#">AGENDA</a></li>
-                <li><a href="https://www.instagram.com/casadasopaderestinga/" target="_blank"><img src="src/img/iconinsta.png" alt="icone-instagram-azul" class="iconsmenu"></a></li>
-                <li><a href="https://www.facebook.com/casadasopaderestinga?locale=pt_BR" target="_blank"><img src="src/img/iconface.png" alt="icone-facebook-azul" class="iconsmenu"></a></li>
+                <li><a href="https://www.instagram.com/casadasopaderestinga/" target="_blank"><img
+                            src="src/img/iconinsta.png" alt="icone-instagram-azul" class="iconsmenu"></a></li>
+                <li><a href="https://www.facebook.com/casadasopaderestinga?locale=pt_BR" target="_blank"><img
+                            src="src/img/iconface.png" alt="icone-facebook-azul" class="iconsmenu"></a></li>
             </ul>
         </nav>
     </header>
-    <img src="src/img/elemento1carossel.png" alt="" class="imgcarrossel">
+    <main class="container-fluid">
+        <section class="row">
+            <img src="src/img/elemento1carossel.png" class="imgcarrossel" alt="">
+        </section>
+        <section class="row">
+            <div class="col-lg-2"></div>
+            <article class="col-lg-6">
+                <p style="font-size: 20px;">História</p>
+                <p>A Casa da Sopa de Restinga foi fundada em 1949 por José Gomes e Maria Garcia Gomes com o propósito de
+                    acolher famílias em situação de vulnerabilidade social no município de Restinga. Com recursos
+                    próprios, José adquiriu o terreno, construiu os primeiros cômodos e iniciou o trabalho solidário que
+                    marcou a história da instituição. Com o passar dos anos, novas ampliações foram feitas, mas a
+                    estrutura acabou se deteriorando. Após o falecimento de José, em 2006, o trabalho continuou, e em
+                    2009, com o apoio de empresários locais, a antiga sede foi reconstruída. Em 2018, a Casa passou por
+                    novas reformas que melhoraram seu espaço físico, fortalecendo sua missão de acolher e servir a
+                    comunidade com dignidade e amor.</p>
+            </article>
+            <article class="">
+                <figure>
+                    <img class="imghistoria" src="src/img/imgHistoria.png" alt="" srcset="">
+                </figure>
+            </article>
+        </section>
+        <!-- Eventos -->
+        <section>
+            <p class="pEventos">Eventos</p>
+
+            <article class="col-lg-10 ">
+
+                <div class="card custom-card" style="width: 18rem;">
+
+                    <div class="card-image-wrapper">
+                        <img src="src/img/eventos/eventoNatal.png" alt="Marmitas de Natal"
+                            class="card-img-top custom-img">
+                    </div>
+
+                    <div class="card-body-custom">
+                        <h5 class="card-title-custom">Marmitas de natal</h5>
+                        <p class="card-date-custom">24/12/2025</p>
+                        <p class="card-text-custom">Neste Natal, a Casa da Sopa leva calor e esperança a quem mais
+                            precisa! Participe e ajude a transformar vidas com nossas marmitas especiais.</p>
+
+                        <div class="card-footer-custom">
+                            <figure>
+                                <img class="card-icon" src="src/img/iconEventos.png" alt="" srcset="">
+                            </figure>
+                            <a href="#" class="btn-lerMais">Ler mais</a>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+        </section>
+
+        <!-- Como posso ajudar -->
+        <section class="row">
+            <figure>
+                <img class="imgComoPossoA" src="src/img/bannerComoPassoA.png" alt="Banner do como posso ajudar?"
+                    srcset="">
+            </figure>
+        </section>
+        <section class="row">
+            <div class="col-lg-3 col-sm-6"></div>
+            <article class="col-lg-6">
+                <p class="textoComoPossoA">
+                    A Casa da Sopa de Restinga segue há décadas transformando realidades por meio do acolhimento e da
+                    solidariedade. Nosso trabalho é mantido graças ao apoio de pessoas que acreditam na importância de
+                    cuidar do próximo. Cada doação, cada gesto de carinho e cada contribuição faz diferença na
+                    continuidade
+                    dessa missão iniciada em 1949.
+                </p>
+                <p class="textoComoPossoA"> Com a sua ajuda, conseguimos manter nossas portas abertas, melhorar nossa
+                    estrutura e seguir acolhendo
+                    famílias com dignidade e amor.
+                </p>
+                <a href="#" class="button-link">
+                    Saiba como você pode contribuir e fazer parte dessa história
+                </a>
+            </article>
+            <div class="col-lg-3"></div>
+        </section>
+
+        <!--section Patrocinadores  -->
+        <section class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <p class="empresas">Empresas Amigas</p>
+                <!-- carousel automatico -->
+                <article id="carousel" class="noselect" data-active="0">
+                    <div id="carousel" class="noselect" data-active="0">
+
+                        <div id="item-0" class="item" data-index="0">
+                            <img src="http://googleusercontent.com/image_collection/image_retrieval/15561203216253995051_0"
+                                alt="Imagem 1" class="carousel-img">
+                        </div>
+
+                        <div id="item-1" class="item" data-index="1">
+                            <img src="http://googleusercontent.com/image_collection/image_retrieval/15561203216253995051_1"
+                                alt="Imagem 2" class="carousel-img">
+                        </div>
+
+                        <div id="item-2" class="item" data-index="2">
+                            <img src="http://googleusercontent.com/image_collection/image_retrieval/15561203216253995051_2"
+                                alt="Imagem 3" class="carousel-img">
+                        </div>
+
+                        <div id="item-3" class="item" data-index="3">
+                            <img src="http://googleusercontent.com/image_collection/image_retrieval/15561203216253995051_3"
+                                alt="Imagem 4" class="carousel-img">
+                        </div>
+
+                        <div id="item-4" class="item" data-index="4">
+                            <img src="http://googleusercontent.com/image_collection/image_retrieval/15561203216253995051_4"
+                                alt="Imagem 5" class="carousel-img">
+                        </div>
+                    </div>
+                </article>
+                <div class="col-lg-2"></div>
+        </section>
+        <!-- section  Localização -->
+        <section class="row ">
+            <div class="col-lg-2"></div>
+            <article class="col-lg-4">
+                <figure>
+                    <img class="venhaConhecer" src="src/img/_imgVenhaConhecer.png" alt="Imagem Venha nos Conhecer"
+                        srcset="">
+                </figure>
+            </article>
+            <article class="col-lg-4">
+                <iframe class="localizacao"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119509.1231561964!2d-47.56472817777065!3d-20.601933983406965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ba07ae6782cb01%3A0x3f0304c5bffbac1e!2sCasa%20da%20Sopa!5e0!3m2!1spt-BR!2sbr!4v1762782820542!5m2!1spt-BR!2sbr"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <i class="iDoAcesse">Acesse o Maps para ter acesso a nosso endereço</i>
+            </article>
+        </section>
+    </main>
+
+    <!-- script -->
     <!-- Bootstrp -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+
+    <script src="src/js/carousel.js"></script>
 </body>
+
 </html>
