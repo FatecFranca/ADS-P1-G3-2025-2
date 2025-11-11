@@ -1,0 +1,75 @@
+
+/* Ajustando o rodap� */
+.rodape {
+    background-color: #3574A8;
+    color: black;
+    font-size: 14px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+    .rodape a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+        .rodape a:hover,
+        .rodape a:active {
+            color: #000000;
+        }
+
+    .rodape p {
+        
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+.iconRedesSociais{
+  margin-left: 50px;
+}
+
+
+.rodape h5 {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.rodape-direitos {
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+.espacoParaDireita {
+        padding-right: 10px;
+        padding-top: 5px;
+    }
+
+
+
+/* Mobile */
+@media (max-width: 568px) {
+    .text-align {
+        text-align: center;
+    }
+
+    .espacoParaEsquerda {
+        padding-right: 30px;
+    }
+
+    .mobile {
+        padding-left: 25px;
+    }
+
+    .mobile2 {
+        padding-left: 20px;
+    }
+
+    .mobile3 {
+        padding-bottom: 30px;
+    }
+}
+
