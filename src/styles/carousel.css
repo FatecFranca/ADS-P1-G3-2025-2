@@ -1,169 +1,104 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
-/* --- Estilos Globais e do Container --- */
-
 
 #carousel {
-    margin-top: 50px;
-    height: 100px;
-    width: 100%; /* Ocupa toda a largura da coluna col-md-8 */
-    
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  height: 250px; /* Altura base do carrossel */
+  overflow: hidden;
+  padding-top: 30px;
 }
-
-.noselect {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-
-
-/* --- Estilos dos Itens e Imagens (Adaptação para Imagens) --- */
 
 .item {
-    color: white;
-    font-size: 0; /* Oculta qualquer texto de número residual */
-    position: absolute;
-    overflow: hidden; /* Garante que a imagem se contenha na borda */
-    padding: 0;
-    /* Transições mantidas para o efeito de nível */
-    transition: height 1s, width 1s, left 1s, margin-top 1s, line-height 1s, background-color 1s;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 1s ease;
+  width: 15vw;
+  max-width: 150px;
+  height: auto;
+  filter: grayscale(30%);
 }
 
-/* **NOVO:** Garante que a imagem preencha o item */
-.carousel-img {
-    width: 150px;
-   
-    object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer, cortando as bordas */
+.item:hover {
+  transform: translateX(-50%) scale(1.1);
+  filter: grayscale(0%);
 }
 
-/* --- Estilos dos Níveis (Valores Convertidos) --- */
-
-/* level-2 (Longe à direita) | Altura: 150px | Largura: 110px | Left: 650px */
+/* --- Níveis --- */
 .level-2 {
-  
-    width: 110px;
-    line-height: 150px;
-    left: 1110px;
-    margin-top: 40px;
-    
+  width: 9vw;
+  left: 80%;
+  margin-top: 4%;
+  opacity: 0.6;
+  z-index: 1;
 }
 
-/* level-1 (Médio à direita) | Altura: 180px | Largura: 130px | Left: 500px */
 .level-1 {
-   
-    width: 130px;
-    line-height: 180px;
-    margin-top: 20px;
-    left: 855px; 
+  width: 11vw;
+  left: 70%;
+  margin-top: 2%;
+  opacity: 0.8;
+  z-index: 2;
 }
 
-/* level0 (Centro/Ativo) | Altura: 200px | Largura: 150px | Left: 330px */
 .level0 {
-    
-    width: 150px;
-    line-height: 200px;
-    left: 560px;
-    background-color: blue;
+  width: 13vw;
+  left: 50%;
+  margin-top: 0%;
+  opacity: 1;
+  z-index: 3;
 }
 
-/* level1 (Médio à esquerda) | Altura: 180px | Largura: 130px | Left: 180px */
 .level1 {
-  
-    width: 130px;
-    line-height: 180px;
-    margin-top: 20px;
-    left: 285px;
+  width: 11vw;
+  left: 30%;
+  margin-top: 2%;
+  opacity: 0.8;
+  z-index: 2;
 }
 
-/* level2 (Longe à esquerda) | Altura: 150px | Largura: 110px | Left: 50px */
 .level2 {
-    width: 110px;
-    line-height: 150px;
-    margin-top: 40px;
-    left: 60px;
+  width: 9vw;
+  left: 20%;
+  margin-top: 4%;
+  opacity: 0.6;
+  z-index: 1;
 }
 
-/* --- Classes de Transição (Valores Convertidos) --- */
-/* Estas classes são tipicamente usadas por uma biblioteca como ReactCSSTransitionGroup ou JS/jQuery personalizado */
+/* --- Responsividade --- */
+@media (max-width: 992px) {
+  #carousel {
+    height: 200px;
+  }
 
-/* Valores Base: h2=150, w2=110, l2=50, hL-2=150, wL-2=110, lL-2=650 */
-/* Margem/Altura de saída/entrada: h30=120, w20=90, mt40=40px */
-
-.left-enter {
-    opacity: 0;
-    left: 50px - 110px; /* -60px */
-    height: 120px;
-    width: 90px;
-    line-height: 120px;
-    margin-top: 40px;
+  .item {
+    width: 18vw;
+    max-width: 120px;
+  }
 }
 
-.left-enter.left-enter-active {
-    opacity: 1;
-    left: 50px;
-    height: 150px;
-    width: 110px;
-    line-height: 150px;
-    margin-top: 25px;
-    transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
+@media (max-width: 768px) {
+  #carousel {
+    height: 180px;
+  }
+
+  .item {
+    width: 20vw;
+    max-width: 100px;
+  }
 }
 
-.left-leave {
-    opacity: 1;
-    left: 650px;
-    height: 150px;
-    width: 110px;
-    line-height: 150px;
-    margin-top: 25px;
-}
+@media (max-width: 480px) {
+  #carousel {
+    height: 160px;
+  }
 
-.left-leave.left-leave-active {
-    left: 650px + 110px + 20; /* 780px */
-    opacity: 0;
-    height: 120px;
-    line-height: 120px;
-    margin-top: 40px;
-    width: 90px;
-    transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
-}
-
-.right-enter {
-    opacity: 0;
-    left: 650px + 110px; /* 760px */
-    height: 120px;
-    width: 90px;
-    line-height: 120px;
-    margin-top: 40px;
-}
-
-.right-enter.right-enter-active {
-    left: 650px;
-    opacity: 1;
-    height: 150px;
-    margin-top: 25px;
-    line-height: 150px;
-    width: 110px;
-    transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
-}
-
-.right-leave {
-    left: 50px;
-    height: 150px;
-    opacity: 1;
-    margin-top: 25px;
-    line-height: 150px;
-    width: 110px;
-}
-
-.right-leave.right-leave-active {
-    left: 50px - 110px; /* -60px */
-    opacity: 0;
-    height: 120px;
-    width: 90px;
-    line-height: 120px;
-    margin-top: 40px;
-    transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
+  .item {
+    width: 22vw;
+    max-width: 80px;
+  }
 }
