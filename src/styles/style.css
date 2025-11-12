@@ -80,13 +80,16 @@ section .imgEventos{
 /* Historia */
 
 .textHistoria{
-  color: black; /* alterar depois */
+  color: rgb(255, 255, 255); /* alterar depois */
 
 }
 .imghistoria{
   width: 300px;
 }
-
+.sectionHistoria{
+  background: linear-gradient(to bottom, #2c5f8d, #1a3d5c);
+  padding-top: 30px;
+}
 
 /*Como posso ajudar  */
 

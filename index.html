@@ -39,20 +39,19 @@
         </nav>
     </header>
     <main class="container-fluid">
-        <section class="row top30">
-            <img src="src/img/elemento1carossel.png" class="imgcarrossel" alt="">
+        <section class="row">
+            <img src="src/img/elemento1carossel.png" class="imgcarrossel img-fluid" alt="">
         </section>
         <!-- Eventos -->
-        <section class="top30">
-            <h4 class="pEventos ">Eventos</p>
-
-                <article class="col-lg-10 ">
+        <section class="row">
+                 <article class="col-lg-12 col-12"> <h4 class="pEventos ">Eventos</p></article>
+                <article class="col-lg-12 col-12">
 
                     <div class="card custom-card" style="width: 18rem;">
 
                         <div class="card-image-wrapper">
-                            <img src="src/img/eventos/eventoNatal.png" alt="Marmitas de Natal"
-                                class="card-img-top custom-img">
+                            <img src="src/img/eventos/eventoNatal.png " alt="Marmitas de Natal"
+                                class="card-img-top custom-img img-fluid">
                         </div>
 
                         <div class="card-body-custom">
@@ -73,11 +72,11 @@
         </section>
 
         <!--section  História -->
-        <section class="row top30">
-            <div class="col-lg-2"></div>
-            <article class="col-lg-6">
-                <h4>História</h4>
-                <p>A Casa da Sopa de Restinga foi fundada em 1949 por José Gomes e Maria Garcia Gomes com o propósito de
+        <section class="row sectionHistoria ">
+            <div class="col-lg-2 .col-12"></div>
+            <article class="col-lg-6 .col-12 ">
+                <h4 class="textHistoria">História</h4>
+                <p class="textHistoria">A Casa da Sopa de Restinga foi fundada em 1949 por José Gomes e Maria Garcia Gomes com o propósito de
                     acolher famílias em situação de vulnerabilidade social no município de Restinga. Com recursos
                     próprios, José adquiriu o terreno, construiu os primeiros cômodos e iniciou o trabalho solidário que
                     marcou a história da instituição. Com o passar dos anos, novas ampliações foram feitas, mas a
@@ -86,7 +85,7 @@
                     novas reformas que melhoraram seu espaço físico, fortalecendo sua missão de acolher e servir a
                     comunidade com dignidade e amor.</p>
             </article>
-            <article class="">
+            <article class="col-lg-2 col-12" >
                 <figure>
                     <img class="imghistoria" src="src/img/imgHistoria.png" alt="Imagem da História" srcset="">
                 </figure>
@@ -135,7 +134,7 @@
             <article class="col-lg-12">
                 <h4>Conheça um pouco do nosso trabalho</h4>
                 <div class="video-container">
-                    <img src="path_imagem_video_thumb" alt="Vídeo Casa da Sopa">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/w3iPjVTHuLk?si=y6VMB_g-8ChxR6Em" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" alt="Vídeo Casa da Sopa" allowfullscreen></iframe>
                 </div>
             </article>
         </section>
@@ -258,43 +257,46 @@
         <!-- fim Como posso ajudar -->
 
 
-        <!--section Patrocinadores  -->
+        <!--section Patrocinadores--> 
         <section class="row ">
             
             <div class="col-lg-12">
                 <h4 class="empresas">Empresas Amigas</h4>
-                <!-- carousel automatico -->
-                <article id="carousel" class="noselect" data-active="0">
+                <!-- carousel automatico 
+                <center>
+                    <article id="carousel" class="noselect" data-active="0">
                     <div id="carousel" class="noselect" data-active="0">
+                        <figure >
+                            <img id="item-0" class="item" data-index="0" src="src/img/empresasAmigas/imgLogoFoftWorks1.png"
+                                alt="Imagem 1" >
+                        </figure>
 
-                        <div id="item-0" class="item" data-index="0">
-                            <img src="src/img/empresasAmigas/imgLogoFoftWorks.png"
-                                alt="Imagem 1" class="carousel-img">
-                        </div>
+                        <figure>
+                            <img id="item-1" class="item" data-index="1" src="src/img/empresasAmigas/imgLogoAtonal.png"
+                                alt="Imagem 2">
+                        </figure>
 
-                        <div id="item-1" class="item" data-index="1">
-                            <img src="src/img/empresasAmigas/imgLogoAtonal.png"
-                                alt="Imagem 2" class="carousel-img">
-                        </div>
+                        <figure >
+                            <img src="src/img/empresasAmigas/imgLogoFoftWorks1.png"
+                                alt="Imagem 3" id="item-2" class="item" data-index="2">
+                        </figure>
 
-                        <div id="item-2" class="item" data-index="2">
-                            <img src="src/img/empresasAmigas/imgLogoFoftWorks.png"
-                                alt="Imagem 3" class="carousel-img">
-                        </div>
-
-                        <div id="item-3" class="item" data-index="3">
+                        <figure >
                             <img src="src/img/empresasAmigas/imgLogoRaniGami.png"
-                                alt="Imagem 4" class="carousel-img">
-                        </div>
+                                alt="Imagem 4" id="item-3" class="item" data-index="3">
+                        </figure>
 
-                        <div id="item-4" class="item" data-index="4">
+                        <figure >
                             <img src="src/img/empresasAmigas/imgLogoStopAndLearn.png"
-                                alt="Imagem 5" class="carousel-img">
-                        </div>
+                                alt="Imagem 5" id="item-4" class="item" data-index="4">
+                        </figure>
                     </div>
                 </article>
-                <div class="col-lg-2"></div>
+                </center>
+                
         </section>
+        -->
+        
         <!-- section  Localização -->
         <section class="row top30">
             <div class="col-lg-2"></div>
@@ -335,7 +337,7 @@
                             <h5>Redes sociais</h5>
                             <p>Fique por dentro das nossas redes sociais</p>
                             <div class="iconRedesSociais">
-                                <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5516999093881" target="_blank">
+                                <a href="https://api.whatsapp.com/send?1=pt_BR&phone=" target="_blank">
                                     <i class="fab fa-whatsapp fa-2x EspaçoIcone2"></i>
                                 </a>
                                 <a href="https://pt-br.facebook.com/" target="_blank">

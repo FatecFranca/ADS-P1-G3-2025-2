@@ -4,8 +4,8 @@
 
 
 #carousel {
-    
-    height: 200px;
+    margin-top: 50px;
+    height: 100px;
     width: 100%; /* Ocupa toda a largura da coluna col-md-8 */
     
 }
@@ -43,46 +43,46 @@
 
 /* level-2 (Longe à direita) | Altura: 150px | Largura: 110px | Left: 650px */
 .level-2 {
-    height: 150px;
+  
     width: 110px;
     line-height: 150px;
-   
-    left: 1050px;
-    margin-top: 25px;
+    left: 1110px;
+    margin-top: 40px;
+    
 }
 
 /* level-1 (Médio à direita) | Altura: 180px | Largura: 130px | Left: 500px */
 .level-1 {
-    height: 180px;
+   
     width: 130px;
     line-height: 180px;
-    left: 850px; 
-    margin-top: 10px;
+    margin-top: 20px;
+    left: 855px; 
 }
 
 /* level0 (Centro/Ativo) | Altura: 200px | Largura: 150px | Left: 330px */
 .level0 {
-    height: 200px;
+    
     width: 150px;
     line-height: 200px;
-    left: 570px;
+    left: 560px;
+    background-color: blue;
 }
 
 /* level1 (Médio à esquerda) | Altura: 180px | Largura: 130px | Left: 180px */
 .level1 {
-    height: 180px;
+  
     width: 130px;
     line-height: 180px;
-    margin-top: 10px;
-    left: 280px;
+    margin-top: 20px;
+    left: 285px;
 }
 
 /* level2 (Longe à esquerda) | Altura: 150px | Largura: 110px | Left: 50px */
 .level2 {
-    height: 150px;
     width: 110px;
     line-height: 150px;
-    margin-top: 25px;
+    margin-top: 40px;
     left: 60px;
 }
 
