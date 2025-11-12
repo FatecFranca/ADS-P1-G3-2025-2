@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+/* --- Estilos Globais e do Container --- */
+
+
+#carousel {
+    
+    height: 200px;
+    width: 100%; /* Ocupa toda a largura da coluna col-md-8 */
+    
+}
+
+.noselect {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+/* --- Estilos dos Itens e Imagens (Adaptação para Imagens) --- */
+
+.item {
+    color: white;
+    font-size: 0; /* Oculta qualquer texto de número residual */
+    position: absolute;
+    overflow: hidden; /* Garante que a imagem se contenha na borda */
+    padding: 0;
+    /* Transições mantidas para o efeito de nível */
+    transition: height 1s, width 1s, left 1s, margin-top 1s, line-height 1s, background-color 1s;
+}
+
+/* **NOVO:** Garante que a imagem preencha o item */
+.carousel-img {
+    width: 150px;
+   
+    object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer, cortando as bordas */
+}
+
+/* --- Estilos dos Níveis (Valores Convertidos) --- */
+
+/* level-2 (Longe à direita) | Altura: 150px | Largura: 110px | Left: 650px */
+.level-2 {
+    height: 150px;
+    width: 110px;
+    line-height: 150px;
+   
+    left: 1050px;
+    margin-top: 25px;
+}
+
+/* level-1 (Médio à direita) | Altura: 180px | Largura: 130px | Left: 500px */
+.level-1 {
+    height: 180px;
+    width: 130px;
+    line-height: 180px;
+    left: 850px; 
+    margin-top: 10px;
+}
+
+/* level0 (Centro/Ativo) | Altura: 200px | Largura: 150px | Left: 330px */
+.level0 {
+    height: 200px;
+    width: 150px;
+    line-height: 200px;
+    left: 570px;
+}
+
+/* level1 (Médio à esquerda) | Altura: 180px | Largura: 130px | Left: 180px */
+.level1 {
+    height: 180px;
+    width: 130px;
+    line-height: 180px;
+    margin-top: 10px;
+    left: 280px;
+}
+
+/* level2 (Longe à esquerda) | Altura: 150px | Largura: 110px | Left: 50px */
+.level2 {
+    height: 150px;
+    width: 110px;
+    line-height: 150px;
+    margin-top: 25px;
+    left: 60px;
+}
+
+/* --- Classes de Transição (Valores Convertidos) --- */
+/* Estas classes são tipicamente usadas por uma biblioteca como ReactCSSTransitionGroup ou JS/jQuery personalizado */
+
+/* Valores Base: h2=150, w2=110, l2=50, hL-2=150, wL-2=110, lL-2=650 */
+/* Margem/Altura de saída/entrada: h30=120, w20=90, mt40=40px */
+
+.left-enter {
+    opacity: 0;
+    left: 50px - 110px; /* -60px */
+    height: 120px;
+    width: 90px;
+    line-height: 120px;
+    margin-top: 40px;
+}
+
+.left-enter.left-enter-active {
+    opacity: 1;
+    left: 50px;
+    height: 150px;
+    width: 110px;
+    line-height: 150px;
+    margin-top: 25px;
+    transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
+}
+
+.left-leave {
+    opacity: 1;
+    left: 650px;
+    height: 150px;
+    width: 110px;
+    line-height: 150px;
+    margin-top: 25px;
+}
+
+.left-leave.left-leave-active {
+    left: 650px + 110px + 20; /* 780px */
+    opacity: 0;
+    height: 120px;
+    line-height: 120px;
+    margin-top: 40px;
+    width: 90px;
+    transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
+}
+
+.right-enter {
+    opacity: 0;
+    left: 650px + 110px; /* 760px */
+    height: 120px;
+    width: 90px;
+    line-height: 120px;
+    margin-top: 40px;
+}
+
+.right-enter.right-enter-active {
+    left: 650px;
+    opacity: 1;
+    height: 150px;
+    margin-top: 25px;
+    line-height: 150px;
+    width: 110px;
+    transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
+}
+
+.right-leave {
+    left: 50px;
+    height: 150px;
+    opacity: 1;
+    margin-top: 25px;
+    line-height: 150px;
+    width: 110px;
+}
+
+.right-leave.right-leave-active {
+    left: 50px - 110px; /* -60px */
+    opacity: 0;
+    height: 120px;
+    width: 90px;
+    line-height: 120px;
+    margin-top: 40px;
+    transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
+}
