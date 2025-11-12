@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'League Spartan', sans-serif;
+}
+
+/* Quem somos */
+
+ .possoAjudar h5, .possoAjudar li {
+  color: #3574A8;
+}
+.possoAjudar{
+    width: 100%;
+}
+.possoAjudar h5{
+    margin-bottom: 20px;
+}
+
+.facaParte h4 {
+  color: #3574A8;
+  text-align: center;
+}
+.facaParte p{
+    text-align: center;
+}
