@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&display=swap');
+
+
+
+img.logo {
+  width: 3vw;
+  height: 3vw;
+  margin-left: 1vw;
+}
+
+nav{
+   background-color: #e9eaf5; 
+}
+
+ul.menu {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 4vw;
+  margin-right: 3vw;
+}
+
+ul.menu li a {
+  text-decoration: none;
+  color: #1A3D7C;
+  font-size: 1vw;
+  font-weight: bold;
+  
+}
+
+img.iconsmenu{
+    width: 2vw;
+    height: 2vw;
+}
+
+
+ul.menu li{
+  display: flex;
+  gap: 0.5vw;
+}
+
+.navbar .navbar-text {
+  color: #1A3D7C;
+}
+.navbar a {
+  color: #c9c9c9;
+  font-size: 11px;
+ 
+}
+.navbar .navbar-text a:hover,
+.navbar .navbar-text a:focus {
+  color: #1A3D7C; 
+}
+.navbar .navbar-nav .nav-link {
+  color: #1A3D7C;
+  border-radius: .25rem;
+  margin: 0 0.25em;
+}
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus {
+  color: #375ea7;
+}
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+  color: #000000;
+  background-color: #6ca2cf;
+}
+.navbar .navbar-toggler {
+  background-color: #1A3D7C;
+   
+
+}
+.navbar .navbar-toggler:hover,
+.navbar .navbar-toggler:focus {
+  background-color: #070606;
+}
+.navbar .navbar-toggler .navbar-toggler-icon {
+  color: #1E91D9;
+}
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+  border-color: #1E91D9;
+}
+.navbar .navbar-link {
+  color: #1E91D9;
+}
+.navbar .navbar-link:hover {
+  color: #0788D9;
+}
+
+@media (max-width: 575px) {
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #000000;
+  }
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #000000;
+  }
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #000000;
+    background-color: #000000;
+  }
+  
+img.logo {
+  width: 12vw;
+  height: 12vw;
+  margin-left: 1vw;
+}
+}
+
+@media (max-width: 767px) {
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #000000;
+  }
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #000000;
+  }
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #000000;
+    background-color: #000000;
+  }
+  img.logo {
+  width: 12vw;
+  height: 12vw;
+  margin-left: 1vw;
+}
+}
+
+@media (max-width: 991px) {
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #000000;
+  }
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #000000;
+  }
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #000000;
+    background-color: #000000;
+  }
+  img.logo {
+  width: 12vw;
+  height: 12vw;
+  margin-left: 1vw;
+}
+}
+
+@media (max-width: 1199px) {
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #000000;
+  }
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #000000;
+  }
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #000000;
+    background-color: #000000;
+  }
+}
+
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+  color: #000000;
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+  color: #000000;
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+  color: #000000;
+  background-color: #000000;
+}
