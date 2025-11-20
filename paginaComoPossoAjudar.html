@@ -19,33 +19,78 @@
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="stylesheet" href="src/styles/comoPossoAjudar.css">
     <link rel="stylesheet" href="src/styles/footer.css">
+     <link rel="stylesheet" href="src/styles/navbar.css">
     
     <title>Casa da Sopa de Restinga</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <header class="cabecalho">
-        <img src="src/img/logoong.png" alt="log-casa-da-sopa-de-restinga" class="logo">
-        <nav>
-            <ul class="menu">
-                <li><a href="#">QUEM SOMOS</a><img src="src/img/setaprabaixo.png" alt="" class="setaprabaixomenu"></li>
-                <li><a href="#">PROJETOS</a><img src="src/img/setaprabaixo.png" alt="" class="setaprabaixomenu"></li>
-                <li><a href="#">QUERO AJUDAR</a></li>
-                <li><a href="#">AGENDA</a></li>
-                <li><a href="https://www.instagram.com/casadasopaderestinga/" target="_blank"><img
-                            src="src/img/iconinsta.png" alt="icone-instagram-azul" class="iconsmenu"></a></li>
-                <li><a href="https://www.facebook.com/casadasopaderestinga?locale=pt_BR" target="_blank"><img
-                            src="src/img/iconface.png" alt="icone-facebook-azul" class="iconsmenu"></a></li>
-            </ul>
+    <header>
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">
+                <figure>
+                    <img src="src/img/logoong.png" alt="log-casa-da-sopa-de-restinga" class="img-fluid logo">
+                </figure>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarText">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            QUEM SOMOS
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="index.html#historia">História</a>
+                            <a class="dropdown-item" href="index.html#M_V_V">Missão, Visão e Valor</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            PROJETOS
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="index.html#distribuicao-sopas">Distribuição de sopas</a>
+                            <a class="dropdown-item" href="index.html#distribuicao-marmitas">Distribuição de marmitas</a>
+                             <a class="dropdown-item" href="#">Lanche para as crianças</a>
+                              <a class="dropdown-item" href="index.html#odontologico">Atendimento Odontológico Infantil</a>
+                               <a class="dropdown-item" href="index.html#aulas-gratuitas">Aulas Gratuitas para Crianças</a>
+                        </div> 
+                    </li>
+                    
+                    <li class="nav-item  active">
+                        <a class="nav-link" href="paginaComoPossoAjudar.html" >QUERO AJUDAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">AGENDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/casadasopaderestinga/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://www.facebook.com/casadasopaderestinga?locale=pt_BR"
+                            target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+    </header>
     </header>
     <!--Fim Navbar -->
     <main class="container-fluid">
         <!-- Como posso ajudar -->
-        <section class="row ">
+        <section class="row comoPossoA">
             <figure>
-                <img class="imgComoPossoA" src="src/img/bannerComoPassoA.png" alt="Banner do como posso ajudar?"
+                <img class="imgComoPossoA img-fluid" src="src/img/bannerComoPassoA.png" alt="Banner do como posso ajudar?"
                     srcset="">
             </figure>
         </section>
@@ -74,7 +119,7 @@
                                 materiais de limpeza.</li>
                         </ul>
                         <center>
-                            <a href="#" class="button-link">
+                            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5516991333776"  class="button-link">
                                 Entrar em contato
                             </a>
                         </center>
@@ -123,7 +168,7 @@
                         </article>
                         <article class="col-lg-4 col-md-4">
                             <h5>Contato</h5>
-                            <p><i class="fas fa-phone-alt espacoParaDireita"></i>(16) 99xxx-xxxx</p>
+                            <p><i class="fas fa-phone-alt espacoParaDireita"></i>(16)  99133-3776</p>
                             <p><i class="fas fa-envelope espacoParaDireita"></i>casa_dasopa@hotmail.com</p>
                             <p><i class="fas fa-map-marker-alt espacoParaDireita"></i>R. Ângelo Felício, 107 -
                                 Centro |
@@ -133,13 +178,13 @@
                             <h5>Redes sociais</h5>
                             <p>Fique por dentro das nossas redes sociais</p>
                             <div class="iconRedesSociais img-fluid">
-                                <a href="https://api.whatsapp.com/send?1=pt_BR&phone=" target="_blank">
+                                <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5516991333776" target="_blank">
                                     <i class="fab fa-whatsapp fa-2x EspaçoIcone2"></i>
                                 </a>
-                                <a href="https://pt-br.facebook.com/" target="_blank">
+                                <a href="https://www.facebook.com/casadasopaderestinga?locale=pt_BR" target="_blank">
                                     <i class="fab fa-facebook-f fa-2x EspaçoIcone2"></i>
                                 </a>
-                                <a href="https://www.instagram.com/" target="_blank">
+                                <a href="https://www.instagram.com/casadasopaderestinga/" target="_blank">
                                     <i class="fab fa-instagram fa-2x EspaçoIcone2"></i>
                                 </a>
                             </div>

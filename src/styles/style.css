@@ -12,55 +12,21 @@ main.container-fluid {
     max-width: 100%;
     padding: 0;
 }
-img.logo {
-  width: 7vw;
-  height: 7vw;
-  margin-left: 3vw;
-}
+
 
 header.cabecalho {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: #ebe4e4;
 }
 
-ul.menu {
-  list-style: none;
-  display: flex;
-  height: 100%;
-  align-items: center;
-  gap: 4vw;
-  margin-right: 3vw;
-}
 
-ul.menu li a {
-  text-decoration: none;
-  color: #1A3D7C;
-  font-size: 1vw;
-  font-weight: semi-bold;
-  
-}
-
-img.iconsmenu{
-    width: 2vw;
-    height: 2vw;
-}
-
-img.setaprabaixomenu{
-    width: 1vw;
-    height: 1vw;
-    cursor: pointer;
-}
-
-ul.menu li{
-  display: flex;
-  gap: 0.5vw;
-}
 
 img.imgcarrossel{
     width: 100%;
     height: auto;
+    margin-top: 50px;
     
     
 }
@@ -93,7 +59,8 @@ section .imgEventos{
 }
 .sectionHistoria{
   background: linear-gradient(to bottom, #2c5f8d, #1a3d5c);
-  padding-top: 30px;
+  padding-top: 60px;
+   padding-bottom: 60px;
 }
 
 /*Como posso ajudar  */
@@ -271,14 +238,15 @@ i.iDoAcesse{
 
 .video-section {
     background: linear-gradient(to bottom, #2c5f8d, #1a3d5c);
-    padding: 40px 90px;
+    padding-bottom: 40px;
+    padding-top: 40px;
 
     text-align: center;
 }
 
-.video-section h5 {
+.video-section h4 {
     color: white;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 
@@ -349,6 +317,9 @@ i.iDoAcesse{
  .logoRodape{
   text-align: center;
  }
-    
+ .video-ong{
+  width: 300px;
+  height: 200px;
+ }   
 
 }
