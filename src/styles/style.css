@@ -26,6 +26,7 @@ header.cabecalho {
 img.imgcarrossel{
     width: 100%;
     height: auto;
+    margin-top: 50px;
     
     
 }
@@ -58,7 +59,8 @@ section .imgEventos{
 }
 .sectionHistoria{
   background: linear-gradient(to bottom, #2c5f8d, #1a3d5c);
-  padding-top: 30px;
+  padding-top: 60px;
+   padding-bottom: 60px;
 }
 
 /*Como posso ajudar  */
