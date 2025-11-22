@@ -1,0 +1,35 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Botão voltar ao Topo */
+.voltarTopo {
+    z-index: 10000000;
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    border-radius: 25px;
+    padding-top: 10px;
+}
+
+    .voltarTopo:active {
+         background-color: #ffffff;
+          border: solid 2px #0c0801;
+    }
+
+    .voltarTopo:hover {
+        border: solid 2px #0c0801;
+          background-color: #ffffff;
+    }
+
+/* Espaço de margem para a rolagem mais lenta */
+.anchor {
+    scroll-margin-top: 10000px; /* Adiciona uma margem de 500px ao topo para reduzir a velocidade */
+}
