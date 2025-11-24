@@ -21,11 +21,11 @@ html {
 
     .voltarTopo:active {
          background-color: #ffffff;
-          border: solid 2px #0c0801;
+          border: solid 1px #0c0801;
     }
 
     .voltarTopo:hover {
-        border: solid 2px #0c0801;
+        border: solid 1px #0c0801;
           background-color: #ffffff;
     }
 
